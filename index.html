@@ -5,9 +5,23 @@
     <title></title>
 </head>
 <body>
-    <h1>玉楼歌吹，声断已随风</h1>
+    <h1>Test</h1>
+    <label for="change">改变localStorage Test字段</label>
+    <input type="text" id="change"/>
+    <button onclick="changeStoraage()">点击改变localStorage</button>
 
-
-    <a href="./index2.html"></a>
+    <p id="heiheihei">Wait change......</p>
+    <a href="./index2.html">另一个页面</a>
 </body>
+<script>
+    function changeStorage(){
+        window.localStorage.setItem('Test',document.getElementById("change"));
+    }
+    window.addEventListener('storage',function(event){
+        console.log(event.key);
+        console.log(event.newValue);
+        document.getElementById("heiheihei").innerText("新值" + event.newValue);
+    })
+
+</script>
 </html>
