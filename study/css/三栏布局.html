@@ -47,23 +47,31 @@
 
         .main {
             display: flex;
-            flex-flow: row nowrap;
+            /*flex-flow: row nowrap;*/
         }
 
         .main .left {
-            flex-basis: 200px;
+            /*flex-basis: 200px;*/
+            /*flex-shrink: 0;*/
+            flex: none;
+            order:-1;
+            width: 200px;
             background-color: aquamarine;
             height: 100%;
         }
 
         .main .right {
-            flex-basis: 200px;
+            /*flex-basis: 200px;*/
+            /*flex-shrink: 0;*/
+            width: 200px;
+            flex:none;
             background-color: #305999;
         }
 
         .main .middle {
-            flex-grow: 1;
+            /*flex-grow: 1;*/
             background-color: burlywood;
+            flex:auto;
         }
     </style>
 </head>
@@ -74,6 +82,9 @@
     </div>
 </nav>
 <div class="main">
+    <div class="middle">
+        <p>Middle</p>
+    </div>
     <div class="left">
         <p>Left</p>
         <p>Left</p>
@@ -82,9 +93,6 @@
         <p>Left</p>
         <p>Left</p>
         <p>Left</p>
-    </div>
-    <div class="middle">
-        <p>Middle</p>
     </div>
     <div class="right">
         <p>Right</p>

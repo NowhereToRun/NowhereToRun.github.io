@@ -42,6 +42,11 @@ body {
     clear: both;
     background-color: darkgray;
     position: relative;
+    /*固定footer 注意给body加上padding*/
+/*    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;*/
 }
 
 #header {
