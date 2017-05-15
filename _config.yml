@@ -43,3 +43,7 @@ sass:
 
 
 images: '/assets/images'
+
+highlighter: pygments  #代码高亮
+
+
