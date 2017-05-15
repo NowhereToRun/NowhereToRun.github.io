@@ -44,6 +44,6 @@ sass:
 
 images: '/assets/images'
 
-highlighter: pygments  #代码高亮
+highlighter: rouge   #代码高亮  Github Page不让用pygments
 
 
